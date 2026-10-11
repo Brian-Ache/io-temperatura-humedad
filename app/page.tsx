@@ -61,10 +61,10 @@ export default function Home() {
         
         <div className="space-y-2">
           <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Estación de Monitoreo Climatológico
+            Proyecto para UCIP
           </h1>
           <p className="text-sm md:text-base text-slate-500 font-medium">
-            Brian — Panel de Control IoT con Next.js Bridge y shadcn/ui
+            Panel de Control IoT: habitacion brian
           </p>
         </div>
 
@@ -97,17 +97,18 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col items-center justify-center space-y-3 pt-2">
-          <div className="text-sm font-medium text-slate-500">
+          {/*<div className="text-sm font-medium text-slate-500">
             Estado de Operación de la ESP32:
           </div>
+          
           <Badge variant={badgeVariant} className="text-sm px-4 py-1.5 font-bold shadow-sm">
             {modo}
-          </Badge>
+          </Badge>*/}
         </div>
 
         <footer className="text-xs text-slate-400 space-y-1">
           <div>Última actualización: <span className="font-medium text-slate-500">{lastUpdate}</span></div>
-          <div className="opacity-70 font-mono text-[10px]">Next.js API Secure Server Bridge Enabled</div>
+          {/*<div className="opacity-70 font-mono text-[10px]">Next.js API Secure Server Bridge Enabled</div>*/}
         </footer>
 
       </div>
