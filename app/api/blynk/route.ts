@@ -11,7 +11,9 @@ export async function GET() {
   const URL_GET_ALL = `https://${SERVIDOR_REGIONAL}/external/api/getAll?token=${BLYNK_TOKEN}`;
 
   try {
-    const respuestaBlynk = await fetch(URL_GET_ALL, { cache: 'no-store' });
+    const respuestaBlynk = await fetch(URL_GET_ALL, { 
+        next: { revalidate: 15 } // Guarda el dato en caché por 15 segundos para todo el mundo
+    });
     
     if (!respuestaBlynk.ok) {
       throw new Error(`Blynk Cloud rechazó la solicitud. Código: ${respuestaBlynk.status}`);
